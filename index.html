@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-    <title>Socket.IO chat</title>
+    <title>Chat</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -10,11 +11,11 @@
         }
 
         body {
-            font: 13px Helvetica, Arial;
+            font: 13px 'Noto Sans', Arial;
         }
 
         form {
-            background: #000;
+            background: #6441a4;
             padding: 3px;
             position: fixed;
             bottom: 0;
@@ -29,9 +30,21 @@
         }
 
         form button {
+            background-color: #fff;
             width: 9%;
-            background: rgb(130, 224, 255);
             border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .navbar {
+            background-color: #6441a4;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .navbar span {
+            display: block;
             padding: 10px;
         }
 
@@ -51,10 +64,19 @@
     </style>
 </head>
 <body>
+<div class="navbar">
+    <span>Chat</span>
+</div>
+
 <ul id="messages"></ul>
+
 <form action="">
-    <input id="m" autocomplete="off"/>
+    <label for="message"></label>
+    <input id="message" type="text" autocomplete="off" placeholder="Enter message..."/>
     <button>Send</button>
 </form>
+
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
