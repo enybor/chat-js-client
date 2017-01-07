@@ -1,1 +1,1 @@
-# chat-js-client
+# Chat on JS and Node.js http server
