@@ -3,6 +3,6 @@
 ## Installation
 
 * install npm
-* run npm install
-* run node server.js
+* run: npm install
+* run: node server.js
 * go to http://localhost:8000/
